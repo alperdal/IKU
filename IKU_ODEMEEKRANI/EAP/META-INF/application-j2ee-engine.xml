@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE application-j2ee-engine SYSTEM 'application-j2ee-engine.dtd'>
+
+<application-j2ee-engine>
+	<reference 
+		reference-type="hard">
+		<reference-target 
+			provider-name="sap.com" 
+			target-type="library">com.sap.mw.jco</reference-target>
+	</reference>
+	<reference 
+		reference-type="hard">
+		<reference-target 
+			provider-name="sap.com" 
+			target-type="library">com.sap.aii.proxy.framework</reference-target>
+	</reference>
+	<provider-name>sap.com</provider-name>
+	<fail-over-enable mode="disable" />
+</application-j2ee-engine>
+

@@ -1,0 +1,53 @@
+<div id="content">
+    <div id="hesap-ozeti">
+        <div style="width:400px">
+            <br>
+            <table>
+              <thead>
+                <tr style="background-image:url('images_v2/ustban1.png'); background-size: 100% 100%">
+                  <th style="width:25px">&nbsp;#</th>
+                  <th class="table-col3">Dönem</th>
+                  <th class="table-col3">Konu</th>
+                  <th class="table-col3">Vade Tarihi</th>
+                  <th class="table-col3">Tutar</th>
+                  <th class="table-col3">Para Birimi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="item in taksitler">
+                  <td><input type="checkbox" ng-model="item.check"></td>
+                  <td>{{item.PERSL}}</td>
+                  <td>{{item.PSOBTYP_TXT}}</td>
+                  <td>{{item.FAEDN}}</td>
+                  <td>{{item.BETRW}}</td>
+                  <td>{{item.WAERS}}</td>
+                  <!--<td>{{item.durum}}<img src="images_v2/odendi.png" style="float:right"></td>-->
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <br>
+        <div id="table-sum">
+            <table>
+                  <tbody>
+                    <tr>
+                      <th class="table-col3">Toplam</th>
+                      <td class="table-col2">{{taksitToplamTutar}} TL</td>
+                    </tr>
+                  </tbody>
+                </table>
+        </div>
+
+
+    </div>
+    <br>
+    <div id="banka-kart-area">
+
+    </div>
+    <div id="action_bar">
+        <div id="button_ilerle" style="cursor: pointer" ng-click="ilerle()">
+            <!--<a href="#/form" style="display: block" >İlerle</a>-->
+            İlerle
+        </div>
+    </div>
+</div>

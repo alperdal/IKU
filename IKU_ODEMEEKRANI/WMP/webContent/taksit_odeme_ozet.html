@@ -1,0 +1,59 @@
+<div id="content">
+    <div class="bank_selector">
+        Banka:
+        <select ng-model="gosterge.bankaSecilen" ng-options="obj.value as obj.text for obj in gosterge.banka">
+            <option value=""></option>
+        </select>
+    </div>
+    <br>
+    <div id="odeme-ozet">
+        <div style="width:100%">
+            <table>
+              <thead>
+                <tr style="background-image:url('images_v2/ustban1.png'); background-size: 100% 100%">
+                    <th class="table-col3">Dönem</th>
+                    <th class="table-col3">Konu</th>
+                    <th class="table-col3">Vade Tarihi</th>
+                    <th class="table-col3">Tutar</th>
+                    <th class="table-col3">Para Birimi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="item in gosterge.taksitler">
+                    <td>{{item.PERSL}}</td>
+                    <td>{{item.PSOBTYP_TXT}}</td>
+                    <td>{{item.FAEDN}}</td>
+                    <td>{{item.BETRW}}</td>
+                    <td>{{item.WAERS}}</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <br>
+        <div>
+            <!--<input type="checkbox" ng-model="sozlesme">-->
+            <!--<a href="javascript:void(0);" ng-click="openSozlesmePopup()">Hizmet Sözleşmesi Onayı</a>-->
+        </div>
+        <br>
+        <div id="table-sum">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th class="table-col3">Toplam</th>
+                      <td class="table-col2">{{taksitToplamTutar}} TL</td>
+                    </tr>
+                  </tbody>
+                </table>
+        </div>
+
+
+    </div>
+    <br>
+    <div id="banka-kart-area"></div>
+    <div id="action_bar">
+        <div id="button_ilerle" style="cursor: pointer" ng-click="ilerle()">
+            <!--<a href="#/form" style="display: block" >İlerle</a>-->
+            İlerle
+        </div>
+    </div>
+</div>

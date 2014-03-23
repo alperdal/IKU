@@ -1,0 +1,63 @@
+<div id="content">
+    <div id="form-area" style="	border-bottom: 2px solid #d4d6d7">
+        <form action="">
+            <input type="radio" value="kayit" name="islem_tipi" ng-model="islemTipi">
+            <span style="font-family: Helvetica,bold ; font-size:13px">Kayıt İşlemleri (Ödeme Planı Oluşturma)</span> <br> <br>
+            <input type="radio" value="taksit" name="islem_tipi" ng-model="islemTipi">
+            <span style="font-family: Helvetica,bold ; font-size:13px">Taksit Ödeme</span>
+            <br>
+        </form>
+    </div>
+
+    <div id="odeme-turleri" ng-show="islemTipi == 'kayit'" style="height:200px; border-bottom: 2px solid #d4d6d7">
+        <form action="">
+            <br>
+            <div id="odemeturuicon">
+                <span>Ödeme Türleri</span>
+            </div>
+            <br>
+            <div style="width:50%;float:left">
+                <input type="checkbox" name="egitim"> Eğitim
+                <br><br>
+                <input type="checkbox" name="erken_kayit"> Erken Kayıt
+                <br><br>
+                <input type="checkbox" name="yaz_okulu"> Yaz Okulu
+                <br><br>
+            </div>
+            <div style="width:50%;float:left">
+                <input type="checkbox" name="yurt">  Yurt
+                <br><br>
+                <input type="checkbox" name="yemek"> Yemek
+                <br><br>
+                <input type="checkbox" name="basvuru_harci"> Başvuru Harcı
+                <br><br>
+            </div>
+        </form>
+    </div>
+
+    <div id="indirimler" ng-show="islemTipi == 'kayit'">
+        <form action="">
+            <br>
+            <div id="indirimicon">
+                <span>İndirimler</span>
+            </div>
+            <br>
+            <div style="width:50%">
+                <input type="checkbox" name="pesin_indirimi"> Peşin İndirimi
+                <br><br>
+                <input type="checkbox" name="burs_indirimi"> Burs İndirimi
+                <br><br>
+                <input type="checkbox" name=""> ....
+                <br><br>
+            </div>
+
+        </form>
+
+    </div>
+    <div id="action_bar">
+        <div id="button_ilerle" style="cursor: pointer" ng-click="ilerle()">
+            <!--<a href="#/form" style="display: block" >İlerle</a>-->
+            İlerle
+        </div>
+    </div>
+</div>

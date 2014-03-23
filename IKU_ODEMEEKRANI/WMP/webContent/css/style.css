@@ -1,0 +1,349 @@
+body{
+	margin: 0;
+	background-color: #b3b3b3;
+	font-family: Helvetica;
+	font-size: 13px
+}
+#main-container{
+	width: 100%;
+}
+#content-container{
+	width:741px;
+	height: 570px;
+	margin: auto;
+	margin-top:100px;
+}
+#oklar{
+	height: 30px;
+	width :650px;
+	margin-left: 37px;
+}
+.ok-first{
+	width:129px;
+	height: 30px; 
+	float:left;
+}
+.ok{
+	width: 127px;
+	height: 30px;
+	float: left
+}
+#okmavi{
+	height: 30px;
+	width: 129px;
+	float: left;
+	background-image: url('../images_v2/okmavi2.png');
+	color:white;
+	font-size: 14px;
+	text-align: center;
+}
+#okmavi span {
+	font-family: Helvetica;
+	line-height:30px
+}
+#okmavi-first{
+	height: 30px;
+	width: 129px;
+	float: left;
+	background-image: url('../images_v2/okmavi.png');
+	color:white;
+	text-align: center;
+	font-size: 14px;
+}
+#okmavi-first span {
+	font-family: Helvetica;
+	line-height:30px
+}
+.okgri{
+	width: 127px;
+	height: 30px;
+	float: left;
+	background-image: url('../images_v2/okgri.png');
+	color:white;
+	text-align: center;
+	font-size: 13px;
+}
+.okgri span{
+	font-family: Helvetica;
+	line-height:30px
+}
+#okgri-first{
+	height: 30px;
+	width: 129px;
+	float: left;
+	background-image: url('../images_v2/okgri2.png');
+	background-repeat: no-repeat;
+	color:white;
+	text-align: center;
+	font-size: 14px;
+}
+#okgri-first span {
+	font-family: Helvetica;
+	line-height:30px
+}
+#content{
+	width:600px;
+	height: 270px;
+	margin-left: 37px;
+	float: left
+}
+#form-area{
+	width: 600px;
+	height:75px;
+	margin-top:25px;
+}
+#ilerle-btn{
+	width: 123px;
+	height: 19px;
+	text-align:center;	
+	color: black;
+	background-image: url('../images_v2/ilerle.png');
+}
+#button-area{
+	width: 500px;
+	height: 35px;
+	float: left;
+	margin-left: 37px
+}
+#odeme-turleri{
+	width: 600px;
+	font-size: 13px;
+}
+#odemeturuicon{
+	width: 116px;
+	height: 18px;
+	background-image: url('../images_v2/ödemetürleriicon.png');
+	text-align: center
+}
+#odemeturuicon span{
+	font-size: 12px;
+	font-family: Helvetica;
+	margin-left: 10px
+}
+#indirimler{
+	width: 600px;
+	height: 170px;
+	font-size: 13px;
+}
+#indirimicon{
+	width: 116px;
+	height: 18px;
+	background-image: url('../images_v2/indirimlericon.png');
+	text-align: center
+}
+#indirimicon span{
+	font-size: 12px;
+	font-family: Helvetica;
+}
+#banka-kart-area{
+	width: 431px;
+	height: 32px;
+	float: left;
+	margin-left: 100px;
+	background-image: url('../images_v2/bankakartlarilogo.png');
+}
+#odeme-ozet{
+	width: 250px;
+	height: 300px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-family: Helvetica;
+}
+#odeme-ozet span{
+	font-weight: bold
+}
+.table-col1{
+	width: 150px;
+	height: 24px;
+	border-right: 2px solid white;
+	padding-left: 5px
+}
+.table-col2{
+	width: 100px;
+	padding-left: 5px
+}
+.table-col3{
+	width: 150px;
+	padding-left: 5px
+}
+
+#odeme-ozet table tbody{
+	background-color: white
+}
+#odeme-ozet table tbody tr{
+	line-height: 30px;
+	font-size: 13px;
+	border-bottom: 1px solid #d4d6d7;
+
+}#odeme-ozet table tbody tr td{
+	padding-left: 5px;
+	border-right: 1px solid #d4d6d7;
+
+}
+#odeme-ozet table tbody tr td:last-child{
+	border-right: 0px;
+}
+#odeme-ozet table tbody tr:last-child{
+	border-bottom: 0px;
+}
+#table-sum{
+	width:225px;
+	float:right;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+#table-sum table tbody tr{
+	line-height: 23px;
+	font-size: 13px;
+	border-bottom: 1px solid #d4d6d7;
+}
+#table-sum table tr th{
+	width: 120px;
+	padding-left: 5px;
+	background-image: url('../images_v2/toplam-bg2.png');
+	color: white;
+	font-family: Helvetica;
+	font-size: 13px
+}
+#table-sum table tr:first-child th{
+	width: 73px;
+	padding-left: 5px;
+	background-image: url('../images_v2/toplam-bg.png');
+	color: white;
+	font-family: Helvetica;
+	font-size: 13px
+}
+#table-sum table tr:last-child th{
+	width: 73px;
+	padding-left: 5px;
+	background-image: url('../images_v2/toplam-bg1.png');
+	color: white;
+	font-family: Helvetica;
+	font-size: 13px
+}
+#table-sum table tr td{
+	width: 130px;
+	padding-left: 5px;
+	text-align: right;
+	padding-right: 10px;	
+}
+#sozlesme-area{
+	width: 500px;
+	height: 350px;
+	border: 1px solid #b3b3b3;
+	background-color: white;
+	overflow-y: scroll;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#onayla-btn{
+	width: 67px;
+	height: 29px;
+	color: white;
+	font-family: Helvetica;
+	font-size: 13px;
+	background-image: url('../images_v2/onayla.png');
+}
+#onayla-btn span{
+	margin-left : 21px;
+	line-height: 28px
+}
+#odeme-info{
+	width: 375px;
+	height: 28px;
+	background-image: url('../images_v2/turuncuzemin.png');
+	background-repeat: no-repeat;
+	line-height: 28px;
+}
+#odeme-info span{
+	color:white;
+	margin-left: 85px;
+	float: left
+}
+#odeme-turu{
+	width: 86px;
+	height: 22px;
+	background-image: url('../images_v2/odemeturu-bg.png');
+	float: left;
+	margin-left: 15px;
+	margin-top: 3px;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	line-height: 23px
+}
+#odeme-formu{
+	font-size: 11px;
+	font-family: Helvetica;
+	font-weight: bold
+}
+#odeme-formu table tbody tr td{
+	padding-top: 10px;	
+}
+#odeme-formu table tbody tr td:last-child{
+	padding-left: 20px
+}
+#ciktial-btn{
+	width: 132px;
+	height: 21px;
+	text-align:center;	
+	color: black;
+	background-image: url('../images_v2/ciktial.png');
+	margin-right: 35px
+}
+#taksit-secimi{
+	font-size: 11px;
+	font-family: Helvetica;
+	font-weight: bold;
+	border-top: 1px solid #b3b3b3;
+}
+#taksit-secimi table tbody tr td{
+	padding-top: 10px;	
+}
+#taksit-secimi table tbody tr td:last-child{
+	padding-left: 20px
+}
+#odemeleri-getir{
+	width: 148px;
+	height: 25px;
+	background-image: url('../images_v2/odemelerigetir.png');
+	float: right;
+	text-align: center;
+}
+#odemeleri-getir span{
+	margin-left: 10px
+}
+#odemeleri-getir-buton{
+	line-height: 27px;
+	text-decoration: none;
+	color : black;
+}
+#hesap-ozeti{
+	width:400px;
+	height: 300px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-family: Helvetica;
+}
+#hesap-ozeti table tbody{
+	background-color: white
+}
+#hesap-ozeti table tbody tr{
+	font-size: 13px;
+	border-bottom: 1px solid #d4d6d7;
+
+}#hesap-ozeti table tbody tr td{
+	padding-left: 5px;
+	border-right: 1px solid #d4d6d7;
+
+}
+#hesap-ozeti table tbody tr td:last-child{
+	border-right: 0px;
+}
+#hesap-ozeti table tbody tr:last-child{
+	border-bottom: 0px;
+}

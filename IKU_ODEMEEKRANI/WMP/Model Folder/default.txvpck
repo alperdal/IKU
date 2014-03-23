@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet >
+	<view uin="V574ng9hspsdk9vok091m">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="design:view:::V2vikbyhsrj76ga2lg6kf">
+			<property name="bounds" value="119,10,167,362"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9hsvqrgmn-nl76k">
+			<property name="bounds" value="10,10,89,91"/>
+		</reference>
+		<reference referencedUin="design:view:::Vegnlqehspw84up7adf1e">
+			<property name="bounds" value="306,10,100,120"/>
+		</reference>
+	</view>
+</nodeSet>

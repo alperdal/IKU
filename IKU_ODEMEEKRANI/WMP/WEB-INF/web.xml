@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+	<display-name>WEB APP</display-name>
+	<description>WEB APP description</description>
+	<servlet>
+		<servlet-name>TaksitHesapOzet</servlet-name>
+		<servlet-class>com.iku.odeme.action.odeme.taksit.TaksitHesapOzet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>OdemeKaydet</servlet-name>
+		<servlet-class>com.iku.odeme.action.odeme.kaydet.OdemeKaydet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>OgrenciInit</servlet-name>
+		<servlet-class>com.iku.odeme.action.odeme.init.OgrenciInit</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>BankalarGet</servlet-name>
+		<servlet-class>com.iku.odeme.action.odeme.init.BankalarGet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>BankaSecim</servlet-name>
+		<servlet-class>com.iku.odeme.action.odeme.banka.BankaSecim</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>BankaOdemeKontrol</servlet-name>
+		<servlet-class>com.iku.odeme.action.odeme.banka.BankaOdemeKontrol</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TaksitHesapOzet</servlet-name>
+		<url-pattern>/TaksitHesapOzet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OgrenciInit</servlet-name>
+		<url-pattern>/OgrenciInit</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BankalarGet</servlet-name>
+		<url-pattern>/BankalarGet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OdemeKaydet</servlet-name>
+		<url-pattern>/OdemeKaydet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BankaSecim</servlet-name>
+		<url-pattern>/BankaSecim</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BankaOdemeKontrol</servlet-name>
+		<url-pattern>/BankaOdemeKontrol</url-pattern>
+	</servlet-mapping>
+</web-app>

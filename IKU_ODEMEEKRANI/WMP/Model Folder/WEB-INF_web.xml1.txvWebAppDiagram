@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet >
+	<view uin="Vegnlqehsyd9022v9ig3l">
+		<property name="$parentUin" value="com.tssap.j2ee.core.webapp:com.tssap.j2ee.core.webapp.WebApp:WEB-INF/web.xml:WEB-INF/web.xml"/>
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="WebAppDiagram"/>
+	</view>
+</nodeSet>

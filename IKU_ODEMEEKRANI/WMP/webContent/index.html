@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PSD 13</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="bootstrap-3.1.1/css/bootstrap.min.css">
+    <!--<link type="text/css" rel="stylesheet" href="css/style.css">-->
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script src="js/min/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="js/min/angular.min.js" type="text/javascript"></script>
+    <script src="js/min/angular-route.min.js" type="text/javascript"></script>
+    <script src="bootstrap-3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/min/ui-bootstrap-tpls-0.9.0.min.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/mainController.js" type="text/javascript"></script>
+</head>
+<body ng-app="AngApp" ng-controller="cAnasayfa">
+
+    <div id="ust_serit"></div>
+    <div id="orta_blok">
+        <div id="nav_bar">
+            <div ng-class="{nav_buton_ilk_selected : gosterge.adim == '1' }" class="nav_buton nav_buton_ilk">Giriş</div>
+            <div ng-show="gosterge.islemTur == 'K'" ng-class="{nav_buton_orta_selected : gosterge.adim == '2' }" class="nav_buton nav_buton_orta">Ödeme Şekli</div>
+            <div ng-show="gosterge.islemTur == 'T'" ng-class="{nav_buton_orta_selected : gosterge.adim == '2' }" class="nav_buton nav_buton_orta">Hesap Özeti</div>
+            <div ng-class="{nav_buton_orta_selected : gosterge.adim == '3' }" class="nav_buton nav_buton_orta">Özet</div>
+            <!--<div ng-show="islemTur" ng-class="{nav_buton_orta_selected : gosterge.adim == '4' }" class="nav_buton nav_buton_orta">Sözleşme Onayı</div>-->
+            <div ng-class="{nav_buton_son_selected : gosterge.adim == '5' }" class="nav_buton nav_buton_son">Ödeme Sonucu</div>
+        </div>
+        <div id="main_content">
+            <div ng-view></div>
+        </div>
+        <!--<div id="action_bar">-->
+                <!--<div id="button_ilerle" style="cursor: pointer" ng-click="ilerle()">-->
+                    <!--&lt;!&ndash;<a href="#/form" style="display: block" >İlerle</a>&ndash;&gt;-->
+                    <!--İlerle-->
+                <!--</div>-->
+        <!--</div>-->
+    </div>
+
+</body>
+</html>

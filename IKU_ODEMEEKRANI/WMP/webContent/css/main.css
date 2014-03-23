@@ -1,0 +1,280 @@
+*
+{
+    margin: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    /*font-weight: bold;*/
+}
+body {
+    background-color: #b3b3b3;
+}
+a, u, a:hover {
+    text-decoration: none;
+}
+
+#ust_serit {
+    width: 100%;
+    height: 72px;
+    background-color:#b6cadf;
+}
+#orta_blok {
+    position: relative;
+    top:-36px;
+    width: 741px;
+    min-height: 367px;
+    background: url("../images/block_orta_04.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+}
+#nav_bar {
+    height: 30px;
+    margin: auto;
+    position: relative;
+    top: 36px;
+    left: 37px;
+}
+.nav_buton {
+    /*margin-left: 5px;*/
+    width: 129px ;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    text-align: center;
+    color: aliceblue;
+}
+.nav_buton_active {
+    width: 129px ;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    text-align: center;
+    color: aliceblue;
+}
+
+.nav_buton_ilk{ background: transparent url("../images/button_nav_ilk_03.png") no-repeat}
+.nav_buton_orta{ background: transparent url("../images/buton_nav_orta.png") no-repeat }
+/*#nav_buton_orta2{ background: transparent url("../images/buton_nav_orta.png") no-repeat}*/
+/*.nav_buton_mavi{ background: transparent url("../images/button_nav_mavi_03.png") no-repeat }*/
+.nav_buton_son{ background: transparent url("../images/buton_nav_orta.png") no-repeat }
+
+.nav_buton_ilk_selected{
+    background: url("../images/okmavi.png") no-repeat;
+}
+.nav_buton_orta_selected{
+    background: url("../images/okmavi2.png") no-repeat;
+}
+.nav_buton_son_selected{
+    background: url("../images/okmavi2.png") no-repeat;
+}
+
+#main_content {
+    position: relative;
+    top: 68px;
+    left: 37px;
+    min-height: 250px;
+    width: 660px;
+    /*margin: 68px auto 0px 37px;*/
+    padding: 2px;
+    /*border: 1px solid coral;*/
+}
+#action_bar {
+    margin: 70px auto;
+    width: 738px;
+    height: 60px;
+}
+#button_ilerle {
+    /*float: right;*/
+    position: relative;
+    left: 345px;
+    width: 123px;
+    height: 19px;
+    background: url("../images/button_ilerle_03.png") no-repeat;
+    text-align: center;
+}
+.table-header {
+    height: 28px;
+    width: 420px;
+    background: transparent url("../images/block_turuncu_03.png") no-repeat;
+    background-size: 100%
+}
+
+#taksit {
+    color: #ffffff;
+    font-size: 11px;
+    text-align: center;
+    line-height: 22px;
+    float: right;
+    background: url("../images/button_taksit.png") no-repeat;
+    height: 22px;
+    width: 86px;
+    margin: 3px 10px auto auto;
+}
+img#info {
+    float: right;
+    height: 23px;
+    width: 23px;
+    margin: 3px 10px auto auto;
+}
+table.kart-bilgileri {
+    width: 420px;
+}
+table.kart-bilgileri td {
+    line-height: 30px;
+}
+
+td span {
+    font-size: 12px;
+}
+tr, td {
+    padding: 2px;
+}
+
+#btn-onayla {
+    float: right;
+    line-height: 29px;
+    color:#ffffff;
+    font-size: 12px;
+    text-align: center;
+    height: 29px;
+    width: 67px;
+    background: url("../images/button_onayla.png") no-repeat;
+}
+.login-box {
+    position: relative;
+    margin: 0px auto;
+    height: 262px;
+    width: 248px;
+    border: 5px solid #b6cadf;
+    border-radius: 19px;
+}
+#giris-logo {
+    margin: -11px auto;
+    width: 107px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #ffffff;
+    background: url("../images/icon_login.png") no-repeat;
+    background-size: 100% 100%;
+}
+table#login-form {
+    width: 205px;
+    margin: 25px auto;
+}
+#login-button {
+    line-height: 16px;
+    text-align: center;
+    height: 16px;
+    width: 104px;
+    background: url("../images/button_login.png");
+}
+
+.table-col1{
+    width: 150px;
+    height: 24px;
+    border-right: 2px solid white;
+    padding-left: 5px
+}
+.table-col2{
+    width: 100px;
+    padding-left: 5px
+}
+.table-col3{
+    width: 150px;
+    padding-left: 5px
+}
+
+#hesap-ozeti{
+    width:400px;
+    height: 300px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: Helvetica;
+}
+#hesap-ozeti table tbody{
+    background-color: white
+}
+#hesap-ozeti table tbody tr{
+    font-size: 13px;
+    border-bottom: 1px solid #d4d6d7;
+
+}#hesap-ozeti table tbody tr td{
+     padding-left: 5px;
+     border-right: 1px solid #d4d6d7;
+
+ }
+#hesap-ozeti table tbody tr td:last-child{
+    border-right: 0px;
+}
+#hesap-ozeti table tbody tr:last-child{
+    border-bottom: 0px;
+}
+
+#table-sum{
+    width:225px;
+    float:right;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+#table-sum table tbody tr{
+    line-height: 23px;
+    font-size: 13px;
+    border-bottom: 1px solid #d4d6d7;
+}
+#table-sum table tr th{
+    width: 120px;
+    padding-left: 5px;
+    background-image: url('../images_v2/toplam-bg2.png');
+    color: white;
+    font-family: Helvetica;
+    font-size: 13px
+}
+
+#table-sum table tr td{
+    width: 130px;
+    padding-left: 5px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#odeme-ozet table tbody{
+    background-color: white
+}
+#odeme-ozet table tbody tr{
+    line-height: 30px;
+    font-size: 13px;
+    border-bottom: 1px solid #d4d6d7;
+
+}#odeme-ozet table tbody tr td{
+     padding-left: 5px;
+     border-right: 1px solid #d4d6d7;
+
+ }
+#odeme-ozet table tbody tr td:last-child{
+    border-right: 0px;
+}
+#odeme-ozet table tbody tr:last-child{
+    border-bottom: 0px;
+}
+#odeme-ozet{
+    width: 500px;
+    min-height: 120px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: Helvetica;
+}
+#odeme-ozet span{
+    font-weight: bold
+}
+.modal-dialog{
+    width: 700px;
+}
+
+.modal-banka {
+    width: 900px;
+    min-height: 500px;
+}

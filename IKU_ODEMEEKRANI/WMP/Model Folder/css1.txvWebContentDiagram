@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet >
+	<view uin="V2vikbyhsrkejr7-1px4dp">
+		<property name="$parentUin" value="com.tssap.j2ee.core.web:com.tssap.j2ee.core.web.WebContent:/IKU_ODEMEEKRANI_WP/webContent/css:css"/>
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="WebContentDiagram"/>
+	</view>
+</nodeSet>

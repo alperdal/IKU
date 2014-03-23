@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet >
+	<view uin="V-wz3dqbhsrh70px-9ty3lh">
+		<property name="$parentUin" value="com.tssap.j2ee.core.ear:com.tssap.j2ee.core.ear.EnterpriseApp:META-INF/application.xml:META-INF/application.xml"/>
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="EARDiagram"/>
+	</view>
+</nodeSet>

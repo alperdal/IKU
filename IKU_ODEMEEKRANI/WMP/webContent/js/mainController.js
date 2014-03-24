@@ -9,6 +9,18 @@ mController.controller("cAnasayfa" , function($scope, Gosterge, $route, $routePa
     $scope.$routeParams = $routeParams;
     $scope.params = $routeParams;
     $scope.gosterge.banka = [];
+    $scope.gitGiris = function(){
+        $location.path('/giris');
+    };
+    $scope.gitHesapOzet = function(){
+        $location.path('/taksit/hesapOzet');
+    };
+    $scope.gitOzet = function(){
+        $location.path('/taksit/ozet');
+    };
+    $scope.gitSonuc = function(){
+        $location.path('/sonuc');
+    };
 
 });
 
@@ -120,6 +132,18 @@ mController.controller("cTaksitOzet", function($scope, Gosterge, $location, $mod
     $scope.sozlesme = "";
     $scope.gosterge.bankaSecilen = '';
     $scope.taksitToplamTutar = ToplamServis.toplam($scope.gosterge.taksitler,'BETRW');
+    $scope.currencySymbol = 'TRY';
+
+    $scope.paraBirimDuzelt = function(){
+        var klm = $scope.gosterge.taksitler.length;
+        for(var i=0;i<klm;i++)
+        {
+            if($scope.gosterge.taksitler[i].WAERS == 'TRY')
+            {
+                $scope.gosterge.taksitler[i].WAERS = 'TL';
+            }
+        }
+    };
 
     $http({method: 'POST',
         url: 'BankalarGet',
@@ -127,10 +151,10 @@ mController.controller("cTaksitOzet", function($scope, Gosterge, $location, $mod
         cache: false }).
         success(function(data, status, headers, config){
             $scope.gosterge.banka = data.banka;
+            $scope.paraBirimDuzelt();
         })
         .error(function(data, status, headers, config) {
         });
-
 
     $scope.openSozlesmePopup = function ()
     {

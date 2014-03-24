@@ -19,12 +19,12 @@
     <div id="ust_serit"></div>
     <div id="orta_blok">
         <div id="nav_bar">
-            <div ng-class="{nav_buton_ilk_selected : gosterge.adim == '1' }" class="nav_buton nav_buton_ilk">Giriş</div>
+            <div ng-class="{nav_buton_ilk_selected : gosterge.adim == '1' }" class="nav_buton nav_buton_ilk" ng-click="gitGiris()">Giriş</div>
             <div ng-show="gosterge.islemTur == 'K'" ng-class="{nav_buton_orta_selected : gosterge.adim == '2' }" class="nav_buton nav_buton_orta">Ödeme Şekli</div>
-            <div ng-show="gosterge.islemTur == 'T'" ng-class="{nav_buton_orta_selected : gosterge.adim == '2' }" class="nav_buton nav_buton_orta">Hesap Özeti</div>
-            <div ng-class="{nav_buton_orta_selected : gosterge.adim == '3' }" class="nav_buton nav_buton_orta">Özet</div>
+            <div ng-show="gosterge.islemTur == 'T'" ng-class="{nav_buton_orta_selected : gosterge.adim == '2' }" class="nav_buton nav_buton_orta" ng-click="gitHesapOzet()">Hesap Özeti</div>
+            <div ng-class="{nav_buton_orta_selected : gosterge.adim == '3' }" class="nav_buton nav_buton_orta" ng-click="gitOzet()">Özet</div>
             <!--<div ng-show="islemTur" ng-class="{nav_buton_orta_selected : gosterge.adim == '4' }" class="nav_buton nav_buton_orta">Sözleşme Onayı</div>-->
-            <div ng-class="{nav_buton_son_selected : gosterge.adim == '5' }" class="nav_buton nav_buton_son">Ödeme Sonucu</div>
+            <div ng-class="{nav_buton_son_selected : gosterge.adim == '5' }" class="nav_buton nav_buton_son" ng-click="gitSonuc()">Ödeme Sonucu</div>
         </div>
         <div id="main_content">
             <div ng-view></div>

@@ -1,6 +1,9 @@
 <div id="content">
+    <div class="taksit_aciklama">
+        Lütfen ödemek istediğiniz taksitleri seçiniz
+    </div>
     <div id="hesap-ozeti">
-        <div style="width:400px">
+        <div style="width:500px">
             <br>
             <table>
               <thead>
@@ -18,7 +21,7 @@
                   <td><input type="checkbox" ng-model="item.check"></td>
                   <td>{{item.PERSL}}</td>
                   <td>{{item.PSOBTYP_TXT}}</td>
-                  <td>{{item.FAEDN}}</td>
+                  <td style="text-align: center">{{item.FAEDN}}</td>
                   <td>{{item.BETRW}}</td>
                   <td>{{item.WAERS}}</td>
                   <!--<td>{{item.durum}}<img src="images_v2/odendi.png" style="float:right"></td>-->
@@ -32,7 +35,7 @@
                   <tbody>
                     <tr>
                       <th class="table-col3">Toplam</th>
-                      <td class="table-col2">{{taksitToplamTutar}} TL</td>
+                      <td class="table-col2">{{taksitToplamTutar | currency:''}} TL(₺)</td>
                     </tr>
                   </tbody>
                 </table>

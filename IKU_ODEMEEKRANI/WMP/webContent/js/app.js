@@ -16,15 +16,18 @@ app.factory('ToplamServis',function() {
     return {
       toplam : function(list,field)
       {
+          var sayisal = 0.0;
           var toplam = 0.0;
+
           $.each(list, function(index, result) {
 
-              var sayisal = parseFloat(result[field].replace(',','')).toFixed(1);
+              sayisal = parseFloat(result[field].replace('.',''));
 //              sayisal = result[field].replace(",","");
               toplam += sayisal;
 
           });
 
+          toplam = toplam.toFixed(2);
           return toplam;
 
       }

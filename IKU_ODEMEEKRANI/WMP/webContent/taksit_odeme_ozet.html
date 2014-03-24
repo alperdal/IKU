@@ -1,6 +1,6 @@
 <div id="content">
     <div class="bank_selector">
-        Banka:
+        Kart Tipi:
         <select ng-model="gosterge.bankaSecilen" ng-options="obj.value as obj.text for obj in gosterge.banka">
             <option value=""></option>
         </select>
@@ -23,8 +23,8 @@
                     <td>{{item.PERSL}}</td>
                     <td>{{item.PSOBTYP_TXT}}</td>
                     <td>{{item.FAEDN}}</td>
-                    <td>{{item.BETRW}}</td>
-                    <td>{{item.WAERS}}</td>
+                    <td style="text-align: right">{{item.BETRW}}</td>
+                    <td style="text-align: left">{{item.WAERS}}</td>
                 </tr>
               </tbody>
             </table>
@@ -40,7 +40,12 @@
                   <tbody>
                     <tr>
                       <th class="table-col3">Toplam</th>
-                      <td class="table-col2">{{taksitToplamTutar}} TL</td>
+                      <td class="table-col3">
+                          <div class="input-group input-group">
+                              <input type="text" class="form-control" placeholder="{{taksitToplamTutar | currency:''}}" ng-maxlength="{{taksitToplamTutar}}">
+                              <span class="input-group-addon">TL(₺)</span>
+                          </div>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
